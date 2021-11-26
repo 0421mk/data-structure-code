@@ -15,7 +15,7 @@ int LSearch(int ar[], int len, int target) // 순차 탐색 알고리즘
 
 int main(void)
 {
-	int arr[] = {3, 5, 2, 4, 9}; // 사이즈가 20 바이트 
+	int arr[] = {1, 2, 3, 4, 5}; // 사이즈가 20 바이트 
 	int idx;
 	
 	// 4라는 데이터 값을 찾아봅시다.
