@@ -3,10 +3,6 @@
 
 int main(void) {
 	
-	int a = 10;
-	add(&a);
-	printf("%d", a);
-	
 	// ArrayList의 생성 및 초기화 
 	List list; // 주소값 할당 
 	int data;
