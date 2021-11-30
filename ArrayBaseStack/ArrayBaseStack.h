@@ -23,4 +23,4 @@ Data SPop(Stack * pstack); // 스택의 데이터 삭제
 
 Data Speek(Stack * pstack); // 스택의 최상단 데이터 확인
 
-#endif 
+#endif
