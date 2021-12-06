@@ -13,19 +13,18 @@ int main(void)
 	
 	printf("종업원 이름: ");
 	scanf("%s", emp.name);
-	printf("%s", emp.name);
-	
-	printf("\n");
 	
 	printf("주민등록번호: ");
 	scanf("%s", emp.pid);
-	printf("%s", emp.pid);
+
+	printf("급여 정보: ");
+	scanf("%d", &emp.salary);
 	
 	printf("\n");
 	
-	printf("급여 정보: ");
-	scanf("%d", &emp.salary);
-	printf("%d", emp.salary);
+	printf("종업원 이름: %s \n", emp.name);
+	printf("주민등록번호: %s \n", emp.pid);
+	printf("급여 정보: %d \n", emp.salary);
 	
 	printf("\n");
 	
