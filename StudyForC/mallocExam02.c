@@ -16,6 +16,9 @@ int main(void)
 	scanf("%d", &number);
 	
 	Person * person = (Person*)malloc(sizeof(Person) * number);
+	// 포인터의 배열이 아님(주소 값들을 저장하는 배열이 아님) 
+	// 구조체 배열의 첫번째 값을 담은 구조체 포인터일뿐
+	// 따라서 바로 값으로 참조 가능 
 	
 	for(i = 0; i<number; i++)
 	{
