@@ -93,7 +93,7 @@ int main(void)
 	
 	while(1)
 	{
-		printf("%d번째 회원 : %s, %d살\n", i + 1, first->name, first->age);
+		printf("%d번째 회원 : %s, %d살\n", i + 1, current->name, current->age);
 		
 		if(current->next == NULL)
 		{
