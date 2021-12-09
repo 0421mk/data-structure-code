@@ -5,7 +5,7 @@
 #define FALSE 0
 
 #define LIST_LEN 100 // 리스트의 크기는 100으로 지정해놓았습니다. 
-typedef int LData; // 앞으로 Data가 될 값입니다. typedef는 별칭을 붙여주는 것 -> LDate 자료형은 int로 컴퓨터가 인식합니다.
+typedef int LData; // 앞으로 Data가 될 값입니다. typedef는 별칭을 붙여주는 것 -> LDate 자료형은 int로 컴퓨터가 인식합니다
 
 typedef struct __ArrayList // 배열 기반 리스트를 정의한 구조체 
 {

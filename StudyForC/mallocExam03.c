@@ -75,6 +75,8 @@ int main(void)
 		printf("%d번 회원의 나이를 입력해주세요.: ", i + 1);
 		scanf("%d", &(*current).age);
 		
+		current->next = NULL;
+		
 		if(first == NULL)
 		{
 			first = current;
