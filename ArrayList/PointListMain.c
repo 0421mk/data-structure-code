@@ -3,7 +3,7 @@
 #include "ArrayList.h"
 #include "Point.h"
 
-int PointListMain(void)
+int PostListMain(void)
 {
 	List list; // 사용할 리스트 
 	Point comPos; // 비교할 때 사용 
@@ -46,7 +46,7 @@ int PointListMain(void)
 	comPos.ypos = 0;
 	
 	// xpos가 2인 데이터 모두 삭제
-	printf("xpos가 2인 데이터 모두 삭제\n");
+	printf("=== xpos가 2인 데이터 모두 삭제 ===\n");
 	if(LFirst(&list, &ppos))
 	{
 		if(PointComp(ppos, &comPos)==1) {

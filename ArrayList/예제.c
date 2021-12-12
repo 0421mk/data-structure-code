@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include "ArrayList.h"
 
-int exam2(void) {
+int main(void) {
 	
 	// ArrayList의 생성 및 초기화 
 	List list; // 주소값 할당 
@@ -9,7 +9,7 @@ int exam2(void) {
 	int sum = 0;
 	ListInit(&list);
 	
-	// 5개의 데이터 저장
+	// 10개의 데이터 저장
 	LInsert(&list, 1);
 	LInsert(&list, 2);
 	LInsert(&list, 3);
@@ -20,6 +20,18 @@ int exam2(void) {
 	LInsert(&list, 8);
 	LInsert(&list, 9);
 	
+	printf("=== 전체 데이터 조회 ===\n");
+	
+	if(LFirst(&list, &data))
+	{
+		printf("%d ", data);
+		
+		while(LNext(&list, &data)) 
+		{
+			printf("%d ", data);
+		}
+	}
+	
 	if(LFirst(&list, &data)) 
 	{
 		
@@ -29,7 +41,9 @@ int exam2(void) {
 			sum += data;
 	}
 	
-	printf("Sum: %d \n", sum);
+	printf("\n\n");
+	printf("Sum: %d", sum);
+	printf("\n\n");
 	
 	if(LFirst(&list, &data)) 
 	{
@@ -44,6 +58,8 @@ int exam2(void) {
 			}
 		}
 	}
+	
+	printf("=== 전체 데이터 조회 ===\n");
 	
 	if(LFirst(&list, &data))
 	{

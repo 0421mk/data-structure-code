@@ -3,7 +3,7 @@
 #include "ArrayList.h"
 #include "NameCard.h"
 
-int main(void)
+int NameCardMain(void)
 {
 	List list;
 	LData nameCard;
