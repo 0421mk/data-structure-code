@@ -3,7 +3,7 @@
 #include "ArrayList.h"
 #include "Point.h"
 
-int main(void)
+int PointListMain(void)
 {
 	List list; // 사용할 리스트 
 	Point comPos; // 비교할 때 사용 
