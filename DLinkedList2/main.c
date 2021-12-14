@@ -21,5 +21,27 @@ int main(void) {
 		}
 	}
 	
+	if(LFirst(&list, &data))
+	{
+		if(data==2) {
+			LRemove(&list);
+		}
+		
+		while(LNext(&list, &data)) {
+			if(data==2) {
+				LRemove(&list);
+			}
+		}
+	}
+	
+	if(LFirst(&list, &data))
+	{
+		printf("%d ", data);
+		
+		while(LNext(&list, &data)) {
+			printf("%d ", data);
+		}
+	}
+	
 	return 0;
 }

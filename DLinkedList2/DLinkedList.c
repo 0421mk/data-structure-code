@@ -34,7 +34,7 @@ int LFirst(List * plist, LData * pdata)
 
 int LNext(List * plist, LData * pdata)
 {
-	if(plist->head->next == NULL) {
+	if(plist->cur->next == NULL) {
 		return FALSE;
 	}
 	
