@@ -26,7 +26,6 @@ int main(void)
 		if(readData < 1)
 			break;
 			
-		
 		// 노드 추가 과정
 		newNode = (Node*)malloc(sizeof(Node)); // Node 구조체 메모리 할당 
 		newNode->data = readData;
