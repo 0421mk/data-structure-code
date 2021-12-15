@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include "DLinkedList.h"
 
-int main(void) {
+int DLinkedList(void) {
 	List list;
 	int data;
 	ListInit(&list);
