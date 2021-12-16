@@ -19,23 +19,22 @@ int main(void)
 	
 	SetSortRule(&list, WhoIsPrecede); // 정렬의 기준을 등록합니다. 
 	
-	// 5개의 데이터 저장
-	LInsert(&list, 2); 
-	LInsert(&list, 4);
-	LInsert(&list, 6);
-	LInsert(&list, 8);
+	while(1) {
+		printf("자연수 입력: ");
+		scanf("%d", &data);
+		
+		if(data < 1) {
+			break;
+		}
+		
+		LInsert(&list, data);
+	}
 	
-	// 저장된 데이터의 전체 출력
-	printf("현재 데이터 수: %d \n", LCount(&list));
-	
-	if(LFirst(&list, &data))
-	{
+	if(LFirst(&list, &data)) {
 		printf("%d ", data);
 		
-		while(LNext(&list, &data))
-		{
+		while(LNext(&list, &data)) {
 			printf("%d ", data);
-			sum += data;	
 		}
 	}
 	
