@@ -1,6 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include "ArrayList.h"
+#include "DLinkedList.h"
 #include "NameCard.h"
 
 int main(void)
@@ -154,12 +154,7 @@ int main(void)
 			printf("프로그램을 종료합니다.\n");
 			
 			break;
-		} else {
-			printf("존재하지 않는 명령어입니다.\n");
-			
 		}
-
-		while(getchar() !='\n');
 	}
 
 	return 0;
