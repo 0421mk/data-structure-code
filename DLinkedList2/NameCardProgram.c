@@ -3,7 +3,7 @@
 #include "DLinkedList.h"
 #include "NameCard.h"
 
-int main(void)
+int NameCardProgram(void)
 {
 	List list;
 	LData nameCard;
