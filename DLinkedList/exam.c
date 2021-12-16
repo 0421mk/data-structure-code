@@ -1,9 +1,9 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include "ArrayList.h"
+#include "DLinkedList.h"
 #include "NameCard.h"
 
-int main(void)
+int Exam(void)
 {
 	List list;
 	LData nameCard;
@@ -25,7 +25,7 @@ int main(void)
 		scanf("%d", &item);
 		
 		if(item == 1){ 
-			NameCard newName; 
+			NameCard newName;
 			
 			printf("[ INSERT ]\n");
 			printf("Input Name: ");
@@ -38,7 +38,7 @@ int main(void)
 			
 			printf("Data Inserted\n");
 		} else if(item == 2) {
-			NameCard newName; 
+			NameCard newName;
 			
 			printf("[ SEARCH ]\n");
 			printf("Search Name: ");
@@ -155,7 +155,8 @@ int main(void)
 			
 			break;
 		} else {
-			printf("존재하지 않는 명령어입니다.\n");	
+			printf("존재하지 않는 명령어입니다.\n");
+			
 		}
 
 		while(getchar() !='\n');

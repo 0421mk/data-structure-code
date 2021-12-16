@@ -4,6 +4,9 @@
 #define TRUE 1
 #define FALSE 0
 
+//#include "NameCard.h"
+//typedef NameCard * LData;
+
 typedef int LData;
 
 typedef struct _node

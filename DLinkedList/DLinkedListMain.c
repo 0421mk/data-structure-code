@@ -14,7 +14,6 @@ int main(void)
 	// 리스트의 생성 및 초기화
 	List list;
 	LData data;
-	int sum = 0;
 	ListInit(&list);
 	
 	SetSortRule(&list, WhoIsPrecede); // 정렬의 기준을 등록합니다. 
