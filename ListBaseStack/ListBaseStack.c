@@ -24,6 +24,8 @@ void SPush(Stack * pstack, Data data) // 스택의 데이터 삽입
 	newNode->data = data;
 	newNode->next = pstack->head;
 	
+	// printf("[스택 추가 %d, %d] > ", data.x, data.y);
+	
 	pstack->head = newNode;
 }
 
@@ -42,6 +44,8 @@ Data SPop(Stack * pstack) // 스택의 최상단 값 반환 및 삭제
 	rnode = pstack->head;
 	
 	pstack->head = pstack->head->next;
+	
+	// printf("[스택 삭제 %d, %d] > ", rdata.x, rdata.y);
 	free(rnode);
 	
 	return rdata;
@@ -54,6 +58,6 @@ Data SPeek(Stack * pstack) // 스택의 최상단 데이터 반환
 		printf("Stack Empty!");
 		exit(-1);
 	}
-	
+		
 	return pstack->head->data;
 }

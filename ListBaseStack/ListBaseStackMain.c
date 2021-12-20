@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include "ListBaseStack.h"
 
-int main(void)
+int exam(void)
 {
 	Stack stack; // 스택이 메모리 공간에 할당됩니다. 
 	StackInit(&stack); // 스택 초기화

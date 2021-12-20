@@ -1,6 +1,5 @@
 #include <stdio.h>
 #include "ArrayBaseStack.h"
-/* run this program using the console pauser or add your own getch, system("pause") or input loop */
 
 int main(void) {
 	// Stack의 생성 및 초기화

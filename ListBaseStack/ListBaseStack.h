@@ -4,7 +4,13 @@
 #define TRUE 1
 #define FALSE 0
 
-typedef int Data;
+typedef struct _point
+{
+	int x;
+	int y;
+} Point;
+
+typedef Point Data;
 
 typedef struct _node
 {
