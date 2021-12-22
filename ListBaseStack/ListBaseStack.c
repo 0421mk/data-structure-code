@@ -2,62 +2,53 @@
 #include <stdlib.h>
 #include "ListBaseStack.h"
 
-void StackInit(Stack * pstack) // 스택 초기화
-{
+void StackInit(Stack * pstack) {
 	pstack->head = NULL;
 }
-
-int SIsEmpty(Stack * pstack) // 스택이 비었는지 확인 
-{
-	if(pstack->head == NULL)
-	{
+int SIsEmpty(Stack * pstack) {
+	if(pstack->head == NULL) {
 		return TRUE;
 	} else {
 		return FALSE;
 	}
 }
 
-void SPush(Stack * pstack, Data data) // 스택의 데이터 삽입
+void SPush(Stack * pstack, Data data)
 {
 	Node * newNode = (Node*)malloc(sizeof(Node));
 	
 	newNode->data = data;
 	newNode->next = pstack->head;
 	
-	// printf("[스택 추가 %d, %d] > ", data.x, data.y);
-	
 	pstack->head = newNode;
+	// 데이터 위쪽부터 삽입 
 }
 
-Data SPop(Stack * pstack) // 스택의 최상단 값 반환 및 삭제
+Data SPop(Stack * pstack)
 {
-	Data rdata; // 삭제 데이터 
-	Node * rnode; // 삭제 데이터의 주소값
+	Data rdata;
+	Node * rnode;
 	
-	if(SIsEmpty(pstack))
-	{
-		printf("Stack Empty!");
+	if(SIsEmpty(pstack)) {
+		printf("Stack Memory Error!");
 		exit(-1);
 	}
 	
 	rdata = pstack->head->data;
 	rnode = pstack->head;
 	
-	pstack->head = pstack->head->next;
-	
-	// printf("[스택 삭제 %d, %d] > ", rdata.x, rdata.y);
+	pstack->head = pstack->head->next; // 아래로 이동
 	free(rnode);
 	
-	return rdata;
+	return rdata; 
 }
 
-Data SPeek(Stack * pstack) // 스택의 최상단 데이터 반환
+Data SPeek(Stack * pstack)
 {
-	if(SIsEmpty(pstack))
-	{
-		printf("Stack Empty!");
+	if(SIsEmpty(pstack)) {
+		printf("Stack Memory Error!");
 		exit(-1);
 	}
-		
+	
 	return pstack->head->data;
 }

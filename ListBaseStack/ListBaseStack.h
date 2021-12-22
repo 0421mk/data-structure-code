@@ -4,13 +4,7 @@
 #define TRUE 1
 #define FALSE 0
 
-typedef struct _point
-{
-	int x;
-	int y;
-} Point;
-
-typedef Point Data;
+typedef int Data;
 
 typedef struct _node
 {
@@ -20,16 +14,17 @@ typedef struct _node
 
 typedef struct _listStack
 {
-	Node * head; // 노드 주소값을 담을 수 있는 자료형으로 ListStack을 정의 
+	Node * head;
 } ListStack;
 
 typedef ListStack Stack;
 
-void StackInit(Stack * pstack); // 스택 초기화 
-int SIsEmpty(Stack * pstack); // 스택이 비었는지 확인 
+void StackInit(Stack * pstack);
+int SIsEmpty(Stack * pstack);
+// 연결리스트는 꽉 찬다는 개념 X 
 
-void SPush(Stack * pstack, Data data); // 스택의 데이터 삽입 
-Data SPop(Stack * pstack); // 스택의 최상단 값 반환 및 삭제 
-Data SPeek(Stack * pstack); // 스택의 최상단 데이터 반환 
+void SPush(Stack * pstack, Data data);
+Data SPop(Stack * pstack);
+Data SPeek(Stack * pstack);
 
 #endif
