@@ -26,6 +26,8 @@ void LInsert(List * plist, Data data)
 	// 새 노드가 삽입되면 head의 위치는 새 노드의 위치와 동일합니다. 
 	newNode->prev = NULL;
 	plist->head = newNode;
+	
+	(plist->numOfData)++;
 }
 
 int LFirst(List * plist, Data * pdata)
