@@ -48,7 +48,7 @@ int movable(Data cur, int dir) {
 		return 0; // 갈수 없다 
 
 	if(maze[cur.x][cur.y] != WALL && maze[cur.x][cur.y] != VISITED && maze[cur.x][cur.y] != BACKTRACKED)
-		return 1;
+		return 1; // 못가는 상황이면 POP으로 되돌아갈 수 있다. 
 	else {
 		return 0;
 	}
@@ -83,7 +83,7 @@ int main(void) {
 			break;
 		}
 		
-		if(maze[cur.x][cur.y] == VISITED) {
+		if(maze[cur.x][cur.y] == VISITED || maze[cur.x][cur.y] == BACKTRACKTED) {
 			maze[cur.x][cur.y] = BACKTRACKED;
 		} else {
 			maze[cur.x][cur.y] = VISITED;
