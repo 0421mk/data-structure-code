@@ -83,7 +83,7 @@ int main(void) {
 			break;
 		}
 		
-		if(maze[cur.x][cur.y] == VISITED || maze[cur.x][cur.y] == BACKTRACKTED) {
+		if(maze[cur.x][cur.y] == VISITED || maze[cur.x][cur.y] == BACKTRACKED) {
 			maze[cur.x][cur.y] = BACKTRACKED;
 		} else {
 			maze[cur.x][cur.y] = VISITED;
