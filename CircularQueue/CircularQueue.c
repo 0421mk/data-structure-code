@@ -5,7 +5,7 @@
 void QueueInit(Queue * pq) // ÅÖºó °æ¿ì µ¿ÀÏ À§Ä¡ °¡¸®Å´ 
 {
 	pq->front = 0;
-	pq->rear = 0;dx
+	pq->rear = 0;
 }
 int QIsEmpty(Queue * pq) {
 	if(pq->front == pq->rear) {
