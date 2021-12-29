@@ -1,6 +1,6 @@
 [Project]
-FileName=ListBaseQueue.dev
-Name=ListBaseQueue
+FileName=Sort.dev
+Name=Sort
 Type=1
 Ver=2
 ObjFiles=
@@ -29,7 +29,7 @@ IncludeVersionInfo=0
 SupportXPThemes=0
 CompilerSet=0
 CompilerSettings=0000000000000000000000000
-UnitCount=4
+UnitCount=1
 
 [VersionInfo]
 Major=1
@@ -50,18 +50,8 @@ ProductVersion=
 AutoIncBuildNr=0
 SyncProduct=1
 
-[Unit1]
-FileName=main.c
-CompileCpp=0
-Folder=
-Compile=1
-Link=1
-Priority=1000
-OverrideBuildCmd=0
-BuildCmd=
-
 [Unit2]
-FileName=ListBaseQueue.h
+FileName=SelectionSort.c
 CompileCpp=0
 Folder=
 Compile=1
@@ -70,18 +60,8 @@ Priority=1000
 OverrideBuildCmd=0
 BuildCmd=
 
-[Unit3]
-FileName=ListBaseQueue.c
-CompileCpp=0
-Folder=
-Compile=1
-Link=1
-Priority=1000
-OverrideBuildCmd=0
-BuildCmd=
-
-[Unit4]
-FileName=HamburgetExam.c
+[Unit1]
+FileName=Sort.c
 CompileCpp=0
 Folder=
 Compile=1

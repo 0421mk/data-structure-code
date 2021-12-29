@@ -54,3 +54,8 @@ Data QPeek(Queue * pq)
 	
 	return pq->queArr[NextPosIdx(pq->front)];
 }
+
+int getCount(Queue * pq) {
+   return pq->rear - pq->front;
+}
+
